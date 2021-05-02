@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(196, 191, 191);
+}
  .redondo{
     font-family: Verdana;
     height: 70px;
@@ -21,7 +23,7 @@
     width: 100px;
     margin-left: 15px;    
     margin-top: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.75);
     border: none;
     background-color: rgb(243, 162, 108);
