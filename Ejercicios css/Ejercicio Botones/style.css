@@ -8,7 +8,7 @@
     margin-left: 30px;
     margin-top: 30px;
     box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.75);
-    background-color:rgba(246, 195, 227, 0.87);
+    background-color:rgb(246, 195, 227);
     border: none;  
     cursor: pointer; 
     
@@ -36,7 +36,7 @@
     display: block;
     margin-left: 15px;
     margin-top: 30px;
-    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.4);
     background-color:RGBA(255,0,0,0.4);/*CON TRANSPARENCIA PERO NO SE VE MUY DIFERENTE XD*/
     border: none;   
     cursor: pointer; 
