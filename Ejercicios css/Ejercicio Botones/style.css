@@ -1,0 +1,52 @@
+
+ .redondo{
+    font-family: Verdana;
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.75);
+    background-color:rgba(246, 195, 227, 0.87);
+    border: none;  
+    cursor: pointer; 
+    
+}
+
+.rectangular{
+    font-family: Verdana;
+    display: block;
+    height: 30px;
+    width: 100px;
+    margin-left: 15px;    
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.75);
+    border: none;
+    background-color: rgb(243, 162, 108);
+    cursor: pointer; 
+    }
+    
+
+.transparente{
+    font-family: Verdana;
+    height: 30px;
+    width: 100px;
+    display: block;
+    margin-left: 15px;
+    margin-top: 30px;
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.75);
+    background-color:RGBA(255,0,0,0.4);/*CON TRANSPARENCIA PERO NO SE VE MUY DIFERENTE XD*/
+    border: none;   
+    cursor: pointer; 
+    }
+.transparente:hover{
+    background-color:crimson;
+}
+.rectangular:hover{
+    background-color: darkorange;
+}
+.redondo:hover{
+    background-color: deeppink;
+}
