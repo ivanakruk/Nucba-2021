@@ -38,11 +38,49 @@ body{
     display: block;
     margin-left: 15px;
     margin-top: 30px;
-    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.4);
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.5);
     background-color:RGBA(255,0,0,0.4);/*CON TRANSPARENCIA PERO NO SE VE MUY DIFERENTE XD*/
     border: none;   
     cursor: pointer; 
     }
+
+.cuadrado{
+    font-family: Verdana;
+    margin-top: 30px; 
+    margin-left: 40px;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.4);
+    background-color: rgb(155, 243, 215);
+}
+.cuadrado:hover{
+    background-color: aqua;
+}
+
+
+.raro{
+
+    font-family: Verdana;
+    margin-top: 30px; 
+    margin-left: 20px;
+    border-radius: 0 10px 0 10px ;
+    display: block;
+    border: none;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.4);
+    background-color: rgb(146, 123, 172);
+}
+.raro:hover{
+    background-color: rgb(137, 47, 189);
+}
+
+
 .transparente:hover{
     background-color:crimson;
 }
