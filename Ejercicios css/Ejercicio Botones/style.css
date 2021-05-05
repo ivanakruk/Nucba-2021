@@ -39,9 +39,10 @@ body{
     margin-left: 15px;
     margin-top: 30px;
     box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.5);
-    background-color:RGBA(255,0,0,0.4);/*CON TRANSPARENCIA PERO NO SE VE MUY DIFERENTE XD*/
     border: none;   
     cursor: pointer; 
+    background-color: transparent;
+    
     }
 
 .cuadrado{
