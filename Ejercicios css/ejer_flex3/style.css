@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;   
+    width: 100%; 
+}
+.section-central{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 930px;    
+}
+
+.section-central__tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60%;
+    height: 400px;
+    background-color: rgb(249, 228, 250);
+    border-radius: 20px;
+    box-shadow: -8px 12px 9px -7px rgba(0,0,0,0.75);
+
+}
+.section-central__titulo{
+    position: absolute;
+    top: 120px;
+    right: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: 10px;
+    margin-top: 120px;
+    width: 20%;
+    height: 50px;    
+    background-color: rgb(255, 36, 145);
+    box-shadow: -8px 11px 9px -7px rgba(0,0,0,0.75);
+}
+p{      
+    font-size: 18px;       
+    padding: 20px;
+    text-align: center;
+}
+.section-central__button{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 600px;
+    left: 550px;    
+}
+.section-central__button button{
+    background-color: hotpink;
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border: 1px solid hotpink;
+    box-shadow: -8px 10px 9px -7px rgba(0,0,0,0.75);
+
+}
+.section-central__button button a{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.section-central__button button:hover{
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.section-central__tarjeta figure{
+    display: flex;    
+    width: 100%;
+}
+
+.section-central__tarjeta figure img{
+    position: absolute;
+    width: 300px;
+    top: 290px;
+}
+
+.section-central__text {
+    width: 60%;
+    justify-content: center;
+}
