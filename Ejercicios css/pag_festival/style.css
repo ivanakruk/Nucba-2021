@@ -92,5 +92,7 @@ h1{
     width: 30vw;
     font-size: 3rem;
     font-family:  sans-serif;
-    text-align: justify;   
+    text-align: justify;  
+    line-height: 4rem; 
+    
    }
