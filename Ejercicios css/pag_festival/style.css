@@ -8,6 +8,21 @@ header{
     width: 100%;
     height: 5em;
 }
+h3{
+    color: white;
+    position: absolute;
+    margin: 1em;
+    margin-top: 1.5em;
+    margin-left: 3em;
+    font-family: 'Lobster', sans-serif; 
+}
+h4{
+    color: white;
+    position: absolute;
+    font-family: 'Noticia Text', sans-serif; 
+    margin: .5em;
+    margin-left: 1.3em;
+}
 .navbar{
     position: fixed;
     width: 100%;
@@ -52,7 +67,7 @@ a {
 .portada h1{
     position: absolute;
     color:white;
-    font-size: 8em;
+    font-size: 10em;
     font-family: 'Lobster', sans-serif;
     margin-top: .5em;    
 }
@@ -96,27 +111,203 @@ a {
     height: 15%;
     font-size: 1rem;
     margin-top: 2rem;
-    background-color: rgb(219, 90, 43);
+    background-color: rgb(216, 140, 27);
     border: none;
     border-radius: 1rem;
 }
-.section-info{
+
+
+.section-bandas{
     width: 100%;
-    height: 60em;
+    height: 120em;
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: center;
+    align-items: center;     
+}
+.section-info-bandas{
+   width: 60%;
+   height: 110em;
+   display: flex;
+   flex-direction: column;
+}
+.section-info-bandas .banda1{
+    width: 100%;
+    height: 30em;    
+    display: flex;
    
 }
-.section-info .imagen{
-    width: 50%;
-    height: 60em;
-   background-image: url(https://image.freepik.com/vector-gratis/festival-musica-rock_10303-54.jpg);
-   background-size: cover;
-
+.section-info-bandas .acdc{
+    width: 40%;
+    height: 100%;
+    background-size: cover;   
+}
+.section-info-bandas h2{
+    width: 90%;            
+    font-size:4em;
+    margin: .5em;
+}
+.section-info-bandas p{
+    margin: 1em;
+    width: 90%;            
+    font-size:1.8em;
 }
 
-.section-info .texto{
-    width: 50%;
-    height: 60em;
+.section-info-bandas .banda2{
+    width: 100%;
+    height: 30em;
+    margin-top: 8em;
+    display: flex;
+   
+}
+.section-info-bandas .ironmaiden{
+    width: 40%;
+    height: 100%;
+    background-size: cover;   
+}
+.section-info-bandas h2{
+    width: 90%;            
+    font-size:4em;
+    margin: .5em;
+}
+.section-info-bandas p{
+    margin: 1em;
+    width: 90%;            
+    font-size:1.8em;
+}
+.section-info-bandas .banda3{
+    width: 100%;
+    height: 30em;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    display: flex;
+   
+}
+.section-info-bandas .metallica{
+    width: 40%;
+    height: 100%;
+    background-size: cover;   
+}
+.section-info-bandas h2{
+    width: 90%;            
+    font-size:4em;
+    margin: .5em;
+}
+.section-info-bandas p{
+    margin: 1em;
+    width: 90%;            
+    font-size:1.8em;
+}
+
+
+.section-quinessomos{    
+        width: 100%;
+        height: 50em;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        background-color: rgb(126, 18, 18);
+}
+
+.section-quinessomos .quienessomos{
+    width: 30%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 62, 72);
+    border-radius: 1em 0 0 1em;
+}
+
+.section-quinessomos .comprar{
+    width: 30%;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 5, 5, 0.534);
+    border-radius: 0 1em 1em 0;
+}
+.section-quinessomos h2 {
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: .3em;
+    margin-top: 0.3em;
+    font-family: 'Lobster', sans-serif;
+}
+.section-quinessomos p {
+    font-size: 1.7em;
+    text-align: justify;
+    padding: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section-quinessomos .comprar-inputs{
+    width: 95%;
+    height: 20em;
+    padding: 1.5em;
+    background-color: rgb(35, 37, 36);
+    box-shadow:2px 2px 21px 2px rgba(0,0,0,0.75);
+    
+}
+ form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+label{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+    width:100%;
+    height: 30%;
+    color: #696565;
+}
+input { 
+    margin-left:1em;    
+    width:55%;
+    height: 40%;
+    
+}
+button{
+    width: 60%;
+    height: 10%;
+    border-radius: 1em;
+    border: .1em solid rgb(223, 148, 10);
+    cursor: pointer;
+    background-color:  rgb(216, 140, 27);
+}
+button:hover{
+    color: red;
+}
+
+footer{   
+    width: 100%;
+    background-color: black;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-icons i {
+    color: white;
+    font-size: 2em;
+    margin: 0px 10px;
+}
+
+.icon-facebook:hover{
+    color: #3b5998;
+    cursor: pointer;
+}
+
+.icon-twitter:hover{
+    color: #1da1f2;
+    cursor: pointer;
+}
+
+.icon-instagram:hover{
+    color: #5851db;
+    cursor: pointer;
 }
