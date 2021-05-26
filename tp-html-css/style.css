@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.portada{
+    width: 100%;
+    height: 50em;
+    background-image: url(./img/portada1.png); 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+
+}
+h1{
+    color: white;
+}
+.container-nav{
+    position: fixed;
+    background-color: rgb(88, 180, 184);
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;   
+}
+.container-nav-list{
+    width: 100%;    
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+.container-nav-list a{   
+    color: white;
+    margin: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.2em;    
+}
+
+/* hasta acá nav y portada*/
+main{
+    width: 100vw;
+   
+}
+
+h2{
+    font-size: 3em;
+    padding-bottom: .5em;
+    font-family: 'KoHo', sans-serif;
+}
+h3{
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.5em;
+    margin: .5em;
+}
+a{
+    font-family:'Crete Round', serif;
+    text-decoration: none;    
+}
+p{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+}
+
+/*-------------*/
+.welcome{
+    width: 100vw;
+    height: 60em;
+    background-color: rgb(219, 245, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-cont{
+    width:75vw ;
+    height:100vh;    
+}
+
+.welcome-cont .description{
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    padding-top: 5em;
+    padding-left: 6em;
+    padding-right: 6em;
+    align-items: center;
+    flex-direction: column; 
+    border-bottom: solid 3px rgb(182, 182, 182);  
+}
+.welcome-cont .description p{
+    padding: 1em;
+    text-align:center;
+}
+.welcome-cont .description button{
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    margin-top:2em;
+    border-radius: 1em;
+    border:solid 1px rgb(166, 204, 206);
+    background-color: rgb(88, 180, 184);
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 1px #000000;
+   
+}
+.welcome-cont .description a{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Abel', sans-serif;
+}
+
+.welcome-cont .infognral{
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(236, 255, 205);
+}
+
+.welcome-cont .infognral i{
+    font-size: 4em;
+    padding: .3em;
+    color: white;
+    background-color: rgb(88, 180, 184);
+    border-radius: 2em;
+}
+.welcome-cont .infognral .info1{
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 245, 246);
+    padding: 2.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    
+}
+.welcome-cont .infognral .info2{
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 245, 246);
+    padding: 2.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.welcome-cont .infognral .info3{
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 245, 246);
+    padding: 2.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+/*-------------*/
+.fondo-img{
+    width: 100vw;
+    height: 30em;
+    background-image: url(./img/imgfondo2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;    
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+}
+
+/*-------------*/
+.products{
+    width: 100vw;
+    height: 80em;
+    background-color: rgb(219, 245, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------*/
+.fondo-img2{
+    width: 100vw;
+    height: 46em;
+    background-image: url(./img/pasteleria-portada-0.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;    
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+}
+
+
+
+/*-------------*/
+footer{
+    width: 100vw;
+    height: 8em;
+    background-color:rgb(88, 180, 184) ;
+}
