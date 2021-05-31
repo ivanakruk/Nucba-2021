@@ -6,52 +6,79 @@
 
 .portada{
     width: 100%;
-    height: 50em;
-    background-image: url(./img/portada1.png); 
+    height: 35em;    
+    background-image: url(./img/p1.jpg); 
     display: flex;
     justify-content: center;
-    align-items: center;    
-    background-position: top;
+    align-items: center;
+    flex-direction: column;    
     background-size: cover;
     background-repeat: no-repeat;  
     background-attachment: fixed;
 
 }
-h1{
-    color: white;
+.portada-capa{
+    position: absolute;
+    width: 100%;
+    height: 35em;
+    background-color: rgba(95, 158, 160, 0.671);
 }
+
 .container-nav{
     position: fixed;
-    background-color: rgb(88, 180, 184);
+    background-color: rgb(219, 245, 246);
     width: 100%;
-    padding: 2em;
+    padding: 1.5em;
     display: flex;
-    justify-content: flex-end;   
+    justify-content: center;   
+    z-index: 100;
 }
+
 .container-nav-list{
     width: 100%;    
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;    
 }
 .container-nav-list a{   
-    color: white;
+    color: black;
     margin: 1em;
     margin-top: 1em;
-    padding: 1em;
+    padding: 0em;
     font-size: 1.2em;    
 }
 
+.logo-portada { 
+    width: 100%;
+    height: 25em;      
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+.logo-portada img{
+    margin-top: 2em;
+    width: 35vw;
+}
+
 /* hasta acá nav y portada*/
-main{
-    width: 100vw;
-   
+
+h1{
+    color: white;
+    font-size: 4em;
+    z-index: 1;
+}
+h4{
+    color: white;
+    font-size: 2.2em;
+    z-index: 1;
 }
 
 h2{
     font-size: 3em;
     padding-bottom: .5em;
+    margin-top: 1em;
     font-family: 'KoHo', sans-serif;
 }
 h3{
@@ -69,9 +96,10 @@ p{
 }
 
 /*-------------*/
+
 .welcome{
-    width: 100vw;
-    height: 60em;
+    width: 100%;
+    height: 70em;
     background-color: rgb(219, 245, 246);
     display: flex;
     justify-content: center;
@@ -79,22 +107,23 @@ p{
 }
 .welcome-cont{
     width:75vw ;
-    height:100vh;    
+    height:135vh;    
 }
 
 .welcome-cont .description{
     width: 75vw;
-    height: 50vh;
+    height: 70vh;
     display: flex;
-    padding-top: 5em;
+    padding-top: 10em;
     padding-left: 6em;
     padding-right: 6em;
+    margin-bottom: 1em;
     align-items: center;
     flex-direction: column; 
     border-bottom: solid 3px rgb(182, 182, 182);  
 }
 .welcome-cont .description p{
-    padding: 1em;
+    padding: .5em;
     text-align:center;
 }
 .welcome-cont .description button{
@@ -102,6 +131,7 @@ p{
     height: 6vh;
     color: white;
     margin-top:2em;
+    margin-bottom: 1em;
     border-radius: 1em;
     border:solid 1px rgb(166, 204, 206);
     background-color: rgb(88, 180, 184);
@@ -117,10 +147,9 @@ p{
 
 .welcome-cont .infognral{
     width: 75vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(236, 255, 205);
+    flex-wrap: wrap;   
 }
 
 .welcome-cont .infognral i{
@@ -137,8 +166,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(219, 245, 246);
-    padding: 2.5em;
+    background-color: rgb(219, 245, 246);   
     padding-left: 4em;
     padding-right: 4em;
     
@@ -151,7 +179,7 @@ p{
     align-items: center;
     flex-direction: column;
     background-color: rgb(219, 245, 246);
-    padding: 2.5em;
+    
     padding-left: 4em;
     padding-right: 4em;
 }
@@ -163,20 +191,18 @@ p{
     align-items: center;
     flex-direction: column;
     background-color: rgb(219, 245, 246);
-    padding: 2.5em;
+   
     padding-left: 4em;
     padding-right: 4em;
 }
 /*-------------*/
 .fondo-img{
-    width: 100vw;
+    width: 100%;
     height: 30em;
     background-image: url(./img/imgfondo2.png);
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;    
+    align-items: center;          
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;  
@@ -185,17 +211,57 @@ p{
 
 /*-------------*/
 .products{
-    width: 100vw;
-    height: 80em;
+    width: 100%;
+    height: 95em;
     background-color: rgb(219, 245, 246);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+.cont-products-carrusel{
+    width: 75vw;
+}
+.products-cont{
+    width: 75vw;
+    height: 30em;
+    display: flex; 
+    align-items: center;    
+    background-color: antiquewhite;
+}
+.products-cont-img{
+    width: 37.5vw;
+    height: 35em;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+.products-cont-img img{
+    width:33vw ;
+}
+.cont-carrusel{
+    width: 75vw;
+    height: 30em;      
+    align-items: center;
+    justify-content: center;   
+    background-color: rgb(55, 175, 165);
+}
+.slide{
+    margin-top: 1em;
+}
+.slide img{
+      
+    height: 35em;
+    background-size: cover;
+}
+
 
 /*-------------*/
 .fondo-img2{
-    width: 100vw;
+    width: 100%;
     height: 46em;
     background-image: url(./img/pasteleria-portada-0.jpg);
     display: flex;
@@ -213,7 +279,7 @@ p{
 
 /*-------------*/
 footer{
-    width: 100vw;
+    width: 100%;
     height: 8em;
     background-color:rgb(88, 180, 184) ;
 }
