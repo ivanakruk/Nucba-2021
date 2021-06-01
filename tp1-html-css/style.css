@@ -266,18 +266,44 @@ p{
     align-items: center;    
     background-color: antiquewhite;
 }
-.products-cont-img{
-    width: 37.5vw;
-    height: 35em;
+figure{
+    width: 20.5vw;
+    height: 25em;
     background-color: blueviolet;
-    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5em;
+    overflow: hidden;   
+    cursor: pointer; 
+    margin: 5em;
 }
 .products-cont-img img{
     width:33vw ;
+    border-radius: 1em;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.50);
+    cursor: pointer;
+    transition: all 500ms ease-out;
 }
+figure .capa{
+    position: absolute;
+    top: 0;
+    width: 88%;
+    height: 64%;
+    border-radius: 1em;
+    background: rgba(0,103,123,0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+   
+}
+
+figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+
+}
+
 .cont-carrusel{
     width: 75vw;
     height: 30em;      
