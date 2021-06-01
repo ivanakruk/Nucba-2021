@@ -30,12 +30,13 @@
     width: 100%;
     padding: 1.5em;
     display: flex;
-    justify-content: center;   
+    justify-content:space-between;   
     z-index: 100;
 }
 
 .container-nav-list{
-    width: 100%;    
+    width: 30%;
+    margin-left: 9em;    
     list-style: none;
     display: flex;
     justify-content: center;
@@ -45,9 +46,15 @@
     color: black;
     margin: 1em;
     margin-top: 1em;
+    margin-left: 1.5em;
     padding: 0em;
-    font-size: 1.2em;    
+    font-size: 1.2em;  
+    font-family:'Crete Round', serif;  
 }
+.container-nav-list a:hover{
+    color: rgb(21, 177, 224);
+}
+
 
 .logo-portada { 
     width: 100%;
@@ -60,6 +67,27 @@
 .logo-portada img{
     margin-top: 2em;
     width: 35vw;
+}
+.button-cont{
+    position: relative;
+    display: flex;
+    width: 20vw;
+    margin-left: 1em;
+}
+.button-cont button{
+    width: 70%;
+    margin-right: 1em;
+    border-radius: 1em;
+    color: white;
+    border:solid 1px rgb(166, 204, 206);
+    background-color: rgb(172, 235, 238);
+    box-shadow: 1px 1px 6px 1px #000000;
+}
+.button-cont button:hover{
+    background-color: rgb(231, 228, 228);
+}
+.button-cont a:hover{
+    color: rgb(21, 177, 224);
 }
 
 /* hasta acá nav y portada*/
@@ -87,6 +115,7 @@ h3{
     margin: .5em;
 }
 a{
+    color: black;
     font-family:'Crete Round', serif;
     text-decoration: none;    
 }
@@ -99,7 +128,7 @@ p{
 
 .welcome{
     width: 100%;
-    height: 70em;
+    height: 60em;
     background-color: rgb(219, 245, 246);
     display: flex;
     justify-content: center;
@@ -139,6 +168,13 @@ p{
     box-shadow: 1px 1px 6px 1px #000000;
    
 }
+.welcome-cont .description button:hover{
+    background-color: rgb(231, 228, 228);
+    
+}
+.welcome-cont .description a:hover{
+    color:rgb(21, 177, 224);
+}
 .welcome-cont .description a{
     color: white;
     font-size: 1.5em;
@@ -147,13 +183,13 @@ p{
 
 .welcome-cont .infognral{
     width: 75vw;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-wrap: wrap;   
 }
 
 .welcome-cont .infognral i{
-    font-size: 4em;
+    font-size: 3em;
     padding: .3em;
     color: white;
     background-color: rgb(88, 180, 184);
@@ -161,7 +197,7 @@ p{
 }
 .welcome-cont .infognral .info1{
     width: 25vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +209,7 @@ p{
 }
 .welcome-cont .infognral .info2{
     width: 25vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +221,7 @@ p{
 }
 .welcome-cont .infognral .info3{
     width: 25vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +248,7 @@ p{
 /*-------------*/
 .products{
     width: 100%;
-    height: 95em;
+    height: 80em;
     background-color: rgb(219, 245, 246);
     display: flex;
     justify-content: center;

@@ -16,13 +16,20 @@
         <nav class="container-nav">
             
             <ul class="container-nav-list">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                
             </ul>
+            <div class="button-cont">
+              <button><a href="#login">Iniciar Sesión</a></button>
+              <button><a href="#login">Regístrarse</a></button>
+            </div>
+           
+            
         </nav>
-        <div class="logo-portada">
+        <div class="logo-portada" id="inicio">
             <img src="./img/logo-patisserie.png" alt="">
             
         </div>
@@ -36,9 +43,9 @@
     </header>
 
     <main>
-      <section class="welcome">
+      <section class="welcome" >
          <div class="welcome-cont">
-             <div class="description">
+             <div class="description"id="nosotros">
                  <h2>Bienvenidos</h2>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis maxime iure ad natus molestiae aliquid soluta earum? Odit molestias culpa laudantium et doloribus, incidunt autem commodi? Sequi explicabo error dolore, vero animi assumenda ad, ut ea autem excepturi quas soluta repellat sunt sint incidunt molestias amet temporibus fuga facilis.</p>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ducimus hic velit voluptatum sunt blanditiis, ad incidunt, quod itaque et eligendi optio perspiciatis dignissimos voluptatibus corporis omnis aliquid error distinctio!</p>
@@ -73,7 +80,7 @@
       <section class="fondo-img">
       </section>
 
-      <section class="products">
+      <section class="products" id="productos">
           <div class="cont-products-carrusel">
             <div class="products-cont">
                 <div class="products-cont-img">
@@ -128,7 +135,9 @@
          
       </section>
              
-      <section class="fondo-img2"></section>
+      <section class="fondo-img2" id="contacto">
+
+      </section>
 
 
     </main>
