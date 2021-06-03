@@ -15,7 +15,6 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-attachment: fixed;
-
 }
 .portada-capa{
     position: absolute;
@@ -28,6 +27,7 @@
     position: fixed;
     background-color: rgb(219, 245, 246);
     width: 100%;
+    height: 5em;
     padding: 1.5em;
     display: flex;
     justify-content:space-between;   
@@ -40,7 +40,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
 }
 .container-nav-list a{   
     color: black;
@@ -61,8 +61,7 @@
     height: 25em;      
     display: flex;
     justify-content: center;
-    align-items: center;   
-    
+    align-items: center;       
 }
 .logo-portada img{
     margin-top: 2em;
@@ -81,7 +80,7 @@
     color: white;
     border:solid 1px rgb(166, 204, 206);
     background-color: rgb(172, 235, 238);
-    box-shadow: 1px 1px 6px 1px #000000;
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
 }
 .button-cont button:hover{
     background-color: rgb(231, 228, 228);
@@ -121,7 +120,7 @@ a{
 }
 p{
     font-family: 'Abel', sans-serif;
-    font-size: 1.2em;
+   
 }
 
 /*-------------*/
@@ -135,12 +134,12 @@ p{
     align-items: center;
 }
 .welcome-cont{
-    width:75vw ;
+    width:60vw ;
     height:135vh;    
 }
 
 .welcome-cont .description{
-    width: 75vw;
+    width: 60vw;
     height: 70vh;
     display: flex;
     padding-top: 10em;
@@ -165,7 +164,7 @@ p{
     border:solid 1px rgb(166, 204, 206);
     background-color: rgb(88, 180, 184);
     cursor: pointer;
-    box-shadow: 1px 1px 6px 1px #000000;
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
    
 }
 .welcome-cont .description button:hover{
@@ -182,11 +181,12 @@ p{
 }
 
 .welcome-cont .infognral{
-    width: 75vw;
+    width: 60vw;
     height: 50vh;
     display: flex;
-    flex-wrap: wrap;   
-}
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    }
 
 .welcome-cont .infognral i{
     font-size: 3em;
@@ -196,7 +196,7 @@ p{
     border-radius: 2em;
 }
 .welcome-cont .infognral .info1{
-    width: 25vw;
+    width: 20vw;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -208,7 +208,7 @@ p{
     
 }
 .welcome-cont .infognral .info2{
-    width: 25vw;
+    width: 20vw;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ p{
     padding-right: 4em;
 }
 .welcome-cont .infognral .info3{
-    width: 25vw;
+    width: 20vw;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -234,7 +234,7 @@ p{
 /*-------------*/
 .fondo-img{
     width: 100%;
-    height: 30em;
+    height: 20em;
     background-image: url(./img/imgfondo2.png);
     display: flex;
     justify-content: center;
@@ -257,59 +257,63 @@ p{
 }
 
 .cont-products-carrusel{
-    width: 75vw;
+    width: 73vw;
 }
-.products-cont{
-    width: 75vw;
-    height: 30em;
+.cont-cards{
+    width: 73vw;
+    height: 70em;
     display: flex; 
-    align-items: center;    
-    background-color: antiquewhite;
+    flex-wrap: wrap;
+    justify-content: space-around;       
+    background-color: rgb(219, 245, 246);/* contenedor de las cards*/
+    margin-bottom: 3em;
 }
-figure{
-    width: 20.5vw;
-    height: 25em;
-    background-color: blueviolet;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;   
-    cursor: pointer; 
-    margin: 5em;
+
+
+.card-producto{
+    width: 25em;
+    height: 30em;
+    overflow: hidden;
+    margin: 3em;
+    border-radius: 0.8em;
+    background-color: rgb(184, 223, 223);
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
+    transition: all 400ms ease;
 }
-.products-cont-img img{
-    width:33vw ;
-    border-radius: 1em;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.50);
-    cursor: pointer;
-    transition: all 500ms ease-out;
+.card-producto:hover{
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+    transform: translateY(-3%);
+
 }
-figure .capa{
-    position: absolute;
-    top: 0;
-    width: 88%;
-    height: 64%;
-    border-radius: 1em;
-    background: rgba(0,103,123,0.5);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
+.card-producto p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card-producto img{
+   width: 100%;
+   height: 15em;
+   object-fit: cover;
+   object-position: center;
    
 }
-
-figure:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-
+.card-producto h3{
+    font-size: 2em;
+    padding: 1em;
+}
+.card-producto p{
+    font-size: 1em;
+    padding: 1em;
 }
 
+
+
 .cont-carrusel{
-    width: 75vw;
-    height: 30em;      
+    width: 58vw;
+    height: 35em;      
     align-items: center;
     justify-content: center;   
-    background-color: rgb(55, 175, 165);
+    
 }
 .slide{
     margin-top: 1em;
@@ -324,7 +328,7 @@ figure:hover > .capa{
 /*-------------*/
 .fondo-img2{
     width: 100%;
-    height: 46em;
+    height: 50em;
     background-image: url(./img/pasteleria-portada-0.jpg);
     display: flex;
     justify-content: center;
@@ -338,10 +342,82 @@ figure:hover > .capa{
 }
 
 
+.portada-capa2{
+    
+    width: 100%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 0.671);
+}
 
+.cont-contacto{/*CONTENEDOR FORMULARIO*/
+    width: 30vw;
+    height: 35em;
+    background-color: rgb(88, 180, 184);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px; 
+    flex-wrap: wrap;
+}
+.contacto-titulo{
+    width: 30vw;
+    height: 3em;     
+    text-align: center;
+    position: relative;
+
+}
+.contacto-titulo h2{
+    margin-top: 1em;
+}
+.form-contacto{
+    width: 30vw;
+    height: 20em;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.cont-name input{
+    width: 20vw;
+    height: 3em;
+    margin-top: 2em;         
+}
+.cont-mail input{
+    width: 20vw;
+    height: 3em;
+    margin-top: 2em;       
+}
+.cont-tel input{
+    width: 20vw;
+    height: 3em;
+    margin-top: 2em;     
+}
+.cont-mensaje input{
+    width: 20vw;
+    height: 5em;
+    margin-top: 2em;  
+}
+.cont-btn button{
+    width: 20vw;
+    height: 2em;
+    margin-top: 2em; 
+}
+
+.espacio-carrusel{
+    width: 100%;
+    height: 50em;
+    background-color: rgb(219, 245, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*-------------*/
 footer{
     width: 100%;
     height: 8em;
     background-color:rgb(88, 180, 184) ;
 }
+
