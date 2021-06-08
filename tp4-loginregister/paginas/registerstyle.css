@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/tp4-loginregister/img/macarons.jpg);   
+    background-image: url(./img/macarons.jpg);   
     background-size: cover;
     background-repeat: no-repeat; 
     
