@@ -1,0 +1,422 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.portada{
+    width: 100%;
+    height: 35em;    
+    background-image: url(./img/p1.jpg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+}
+.portada-capa{
+    position: absolute;
+    width: 100%;
+    height: 35em;
+    background-color: rgba(95, 158, 160, 0.671);
+}
+
+.container-nav{
+    position: fixed;
+    background-color: rgb(219, 245, 246);
+    width: 100%;
+    height: 5em;
+    padding: 1.5em;
+    display: flex;
+    justify-content:space-between;   
+    z-index: 100;
+}
+
+.container-nav-list{
+    width: 30%;
+    margin-left: 9em;    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.container-nav-list a{   
+    color: black;
+    margin: 1em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    padding: 0em;
+    font-size: 1.2em;  
+    font-family:'Crete Round', serif;  
+}
+.container-nav-list a:hover{
+    color: rgb(21, 177, 224);
+}
+
+.logo-portada { 
+    width: 100%;
+    height: 25em;      
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+.logo-portada img{
+    margin-top: 2em;
+    width: 35vw;
+}
+.button-cont{
+    position: relative;
+    display: flex;
+    width: 20vw;
+    margin-left: 1em;
+}
+.button-cont button{
+    width: 70%;
+    margin-right: 1em;
+    border-radius: 1em;
+    color: white;
+    border:solid 1px rgb(166, 204, 206);
+    background-color: rgb(172, 235, 238);
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
+}
+.button-cont button:hover{
+    background-color: rgb(231, 228, 228);
+}
+.button-cont a:hover{
+    color: rgb(21, 177, 224);
+}
+
+/* hasta acá nav y portada*/
+
+h1{
+    color: white;
+    font-size: 4em;
+    z-index: 1;
+}
+h4{
+    color: white;
+    font-size: 2.2em;
+    z-index: 1;
+}
+
+h2{
+    font-size: 3em;
+    padding-bottom: .5em;
+    margin-top: 1em;
+    font-family: 'KoHo', sans-serif;
+}
+h3{
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.5em;
+    margin: .5em;
+}
+a{
+    color: black;
+    font-family:'Crete Round', serif;
+    text-decoration: none;    
+}
+p{
+    font-family: 'Abel', sans-serif;
+   
+}
+
+/*-------------*/
+
+.welcome{
+    width: 100%;
+    height: 60em;
+    background-color: rgb(219, 245, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-cont{
+    width:60vw ;
+    height:135vh;    
+}
+
+.welcome-cont .description{
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    padding-top: 10em;
+    padding-left: 6em;
+    padding-right: 6em;
+    margin-bottom: 1em;
+    align-items: center;
+    flex-direction: column; 
+    border-bottom: solid 3px rgb(182, 182, 182);  
+}
+.welcome-cont .description p{
+    padding: .5em;
+    text-align:center;
+}
+.welcome-cont .description button{
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    margin-top:2em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    border:solid 1px rgb(166, 204, 206);
+    background-color: rgb(88, 180, 184);
+    cursor: pointer;
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
+   
+}
+.welcome-cont .description button:hover{
+    background-color: rgb(231, 228, 228);
+    
+}
+.welcome-cont .description a:hover{
+    color:rgb(21, 177, 224);
+}
+.welcome-cont .description a{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Abel', sans-serif;
+}
+
+.welcome-cont .infognral{
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    }
+
+.welcome-cont .infognral i{
+    font-size: 3em;
+    padding: .3em;
+    color: white;
+    background-color: rgb(88, 180, 184);
+    border-radius: 2em;
+}
+.welcome-cont .infognral .info1{
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 245, 246);   
+    padding-left: 4em;
+    padding-right: 4em;
+    
+}
+.welcome-cont .infognral .info2{
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 245, 246);
+    
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.welcome-cont .infognral .info3{
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 245, 246);
+   
+    padding-left: 4em;
+    padding-right: 4em;
+}
+/*-------------*/
+.fondo-img{
+    width: 100%;
+    height: 20em;
+    background-image: url(./img/imgfondo2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;          
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+}
+
+/*-------------*/
+.products{
+    width: 100%;
+    height: 80em;
+    background-color: rgb(219, 245, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-products-carrusel{
+    width: 73vw;
+}
+.cont-cards{
+    width: 73vw;
+    height: 70em;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;       
+    background-color: rgb(219, 245, 246);/* contenedor de las cards*/
+    margin-bottom: 3em;
+}
+
+
+.card-producto{
+    width: 25em;
+    height: 30em;
+    overflow: hidden;
+    margin: 3em;
+    border-radius: 0.8em;
+    background-color: rgb(184, 223, 223);
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
+    transition: all 400ms ease;
+}
+.card-producto:hover{
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+.card-producto p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card-producto img{
+   width: 100%;
+   height: 15em;
+   object-fit: cover;
+   object-position: center;
+   
+}
+.card-producto h3{
+    font-size: 2em;
+    padding: 1em;
+}
+.card-producto p{
+    font-size: 1em;
+    padding: 1em;
+}
+
+
+
+.cont-carrusel{
+    width: 58vw;
+    height: 35em;      
+    align-items: center;
+    justify-content: center;   
+    
+}
+.slide{
+    margin-top: 1em;
+}
+.slide img{
+      
+    height: 35em;
+    background-size: cover;
+}
+
+
+/*-------------*/
+.fondo-img2{
+    width: 100%;
+    height: 50em;
+    background-image: url(./img/pasteleria-portada-0.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;    
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+}
+
+
+.portada-capa2{
+    
+    width: 100%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 0.671);
+}
+
+.cont-contacto{/*CONTENEDOR FORMULARIO*/
+    width: 30vw;
+    height: 35em;
+    background-color: rgb(88, 180, 184);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px; 
+    flex-wrap: wrap;
+}
+.contacto-titulo{
+    width: 30vw;
+    height: 3em;     
+    text-align: center;
+    position: relative;
+
+}
+.contacto-titulo h2{
+    margin-top: 1em;
+}
+.form-contacto{
+    width: 30vw;
+    height: 20em;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.cont-name input{
+    width: 20vw;
+    height: 3em;
+    margin-top: 2em;         
+}
+.cont-mail input{
+    width: 20vw;
+    height: 3em;
+    margin-top: 2em;       
+}
+.cont-tel input{
+    width: 20vw;
+    height: 3em;
+    margin-top: 2em;     
+}
+.cont-mensaje input{
+    width: 20vw;
+    height: 5em;
+    margin-top: 2em;  
+}
+.cont-btn button{
+    width: 20vw;
+    height: 2em;
+    margin-top: 2em; 
+}
+
+.espacio-carrusel{
+    width: 100%;
+    height: 50em;
+    background-color: rgb(219, 245, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------*/
+footer{
+    width: 100%;
+    height: 8em;
+    background-color:rgb(88, 180, 184) ;
+}
+
