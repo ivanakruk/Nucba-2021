@@ -15,7 +15,7 @@ html{
 }
 h1{
     font-family: 'Solway', serif;
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 400;
     animation:pulse;
     animation-duration:1.5s;
@@ -34,7 +34,7 @@ a{
 .espacio-fondo-nav{
     background-color: white;
     width: 100%;    
-    height: 5.5em;
+    height: 5.8em;
     min-width: 250px;
 }
 .espacio-nav{
@@ -92,7 +92,7 @@ a{
 .container-nav-list li a {
     text-decoration: none;
     margin-left: 1em;    
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
 }
 .container-nav-list  a:hover{
@@ -108,7 +108,7 @@ a{
     padding:.2em;
     border: none;
     background-color:#51a8b1;
-    font-size:1.3em; 
+    font-size:1em; 
     box-shadow: 0px 1px 10px rgba(0,0, 0, 0.6);
 }
 .container-items .nav-button button:hover{    
@@ -129,7 +129,7 @@ a{
 
 .portada{
     width: 100%;
-    height: 40em;
+    height: 35em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +152,7 @@ a{
 .portada-capa{
     position: absolute;
     width: 100%;
-    height: 40em;
+    height: 35em;
     background-color: rgba(95, 158, 160, 0.527);
     min-width: 250px;
 }
@@ -177,6 +177,7 @@ a{
     animation: backInUp;
     animation-duration:3s;
     min-width: 250px;
+    border-bottom: solid 3px rgb(182, 182, 182); 
 }
 .description h2{
     font-size: 3em;
@@ -197,6 +198,7 @@ a{
 .description button{
     background-color:#51a8b1;
     border: none;
+    margin-bottom: 1em;
     padding: .5em;
     box-shadow: 0px 1px 10px rgba(0,0, 0, 0.6);
 }
@@ -214,22 +216,22 @@ a{
     
 }
 .infognral i{
-    font-size: 4em;
+    font-size: 3em;
     background-color:#51a8b1;
     padding: .5em;
     color: white;
     box-shadow: 0px 1px 10px rgba(0,0, 0, 0.6);    
 }
 .infognral p{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .infognral h3{
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 1em;
 }
 .info1{
-    width: 33em;
-    height: 30em;
+    width: 25em;
+    height: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,8 +241,8 @@ a{
 
 
 .info2{
-    width: 33em;
-    height: 30em;
+    width: 25em;
+    height: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,8 +250,8 @@ a{
     text-align: center;
 }
 .info3{
-    width: 33em;
-    height: 30em;
+    width: 25em;
+    height: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,7 +264,7 @@ a{
 .fondo-img{
     background-image:url(./img/fondoimg1.jpg);
     width: 100%;
-    height: 30em;
+    height: 25em;
     background-size: cover;
     background-repeat: no-repeat;  
     background-attachment: fixed;
@@ -289,7 +291,7 @@ a{
     margin: 1em;
 }
 .card-producto{
-    width: 35em;
+    width: 25em;
     height: 40em;
     overflow: hidden;
     margin: 7em;
@@ -329,14 +331,14 @@ a{
 }
 .cont-carrusel{
     width: 58vw;
-    height: 60em;      
+    height: 35em;      
     align-items: center;
     justify-content: center;   
     
 }
 .slide img{
       
-    height: 60em;
+    height:35em;
     background-size: cover;
 }
 .slide{
@@ -482,8 +484,8 @@ footer h4{
         height:0em;       
     }
     .logo img{
-        width:0vw;
-        margin-bottom: 0; 
+        width:20vw;
+        margin-bottom:0em; 
         position: absolute;     
     }
     .container-nav{    
@@ -522,7 +524,7 @@ footer h4{
         font-size:0.8em;     
     }
     .logo-portada img{
-        width: 100%;
+        width: 90%;
         margin-bottom: 2em;
         margin-top: 2.5em;
         margin-left:0em;
@@ -539,10 +541,10 @@ footer h4{
         margin: 0;
     }
     .description h2{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .description p{
-        font-size: .8em;
+        font-size: 1em;
         margin: 1em;
     }
     .description button a{
@@ -552,15 +554,16 @@ footer h4{
     }
     .infognral i{
         font-size: 2.5em;      
-        padding: .5em;
-        
+        padding: .5em;       
     }
     .infognral p{
         font-size: 1em;
+        margin: 0em;
     }
     .infognral h3{
         font-size: 1em;
         padding: .5em;
+        margin-top: .5em;
     }
     .info1{
         height: 15em;      
@@ -635,6 +638,177 @@ footer h4{
             padding: .5em;
         }
 }
+@media (min-width: 500px) and (max-width: 800px){
+   
+    h1{
+        font-size: 2.2em;
+    }
+    h4{
+        font-size: 1.2em;
+    } 
+    .cont-carrusel{
+        width: 0vw;
+        height:0em;       
+    }
+    .logo img{
+        width:25vw;
+        margin-bottom: 2em; 
+            
+    }
+    .container-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-nav-list li a {
+       font-size: .8em;
+       margin-left:.5em;
+       
+    }
+    .container-nav-list ul{
+        margin-left:5em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .cont-button{
+        margin: .5em;
+    }
+    .container-items{
+        width:100%;
+        margin-left:2em;       
+    }
+    .container-nav-list {
+        width: 100%;              
+        padding: 1em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .container-items .nav-button button{
+        margin-left: 1em;
+        margin-top: .4em;    
+        padding:.2em;      
+        font-size:0.8em;     
+    }
+    .logo-portada img{
+        width: 90%;
+        margin-bottom: 2em;
+        margin-top: 2.5em;
+        margin-left:0em;
+    }
+    .portada{
+        width: 100%;
+        height: 20em;         
+    }
+    .portada-capa{
+        height: 20em;
+    }
+    .welcome{
+        width: 100%;        
+        margin: 0;
+    }
+    .description h2{
+        font-size: 1.8em;
+    }
+    .description p{
+        font-size: 1.2em;
+        margin: 1em;
+    }
+    .description button a{
+        font-size: 1em;    
+        text-decoration: none;
+        color: white;    
+    }
+    .infognral i{
+        font-size: 3em;      
+        padding: .5em;       
+    }
+    .infognral p{
+        font-size: 1em;
+        margin: 0em;
+    }
+    .infognral h3{
+        font-size: 2em;
+        padding: .5em;
+        margin-top: .5em;
+    }
+    .info1{
+        width: 30em;
+        height: 20em;      
+    }
+    .info2{
+        width: 30em;
+        height: 20em;      
+    }
+    .info3{
+        width: 30em;
+        height: 20em;      
+    }
+    .espacio-cards{
+      width: 100%;     
+    }
+    .card-producto h3{
+     font-size: 1.5em;
+     padding: .5em;
+   
+    }
+    .card-producto p{
+        font-size: 1em;
+        padding: .3em;
+    }
+    .card-producto{
+        margin: 2em;
+        height: 25em;
+    }
+    .card-producto img{
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+        object-position: center;        
+     }
+     .fondo-img{
+        height: 15em;
+     }
+    .cont-contacto
+       {/*CONTENEDOR FORMULARIO*/
+        width: 100vw;
+        height: 40em;
+        display: flex;
+        justify-content: center;
+        }
+        .form-contacto{
+            width: 100vw;               
+             
+        }
+        .cont-name input{
+            width: 80vw;
+            height: 4em;
+                   
+        }
+        .cont-mail input{
+            width: 80vw;
+            height: 4em;
+            margin-top: 2em;       
+        }
+        .cont-tel input{
+            width: 80vw;
+            height: 4em;
+            margin-top: 2em;     
+        }
+        textarea{
+            width: 78vw;
+        }
+        .cont-btn button{
+            width: 80vw;
+            height: 2em;
+            margin-top: 2em; 
+        }
+        .cont-footer h4{
+            margin-left: 1em;
+            padding: .5em;
+        }
+}
+
 @media (min-width: 1000px) and (max-width: 1416px){
     .card-producto{
         width: 15em;
