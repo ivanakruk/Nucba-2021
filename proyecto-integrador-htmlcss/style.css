@@ -44,12 +44,13 @@ a{
     justify-content: center;
     z-index: 100;
     position: fixed;
-    min-width: 250px;   
+    border-bottom: 1px solid rgb(60, 169, 202);
+    box-shadow: 5px 0 10px rgba(0,0, 0, 0.6);  
 }
 .logo img{
-    width: 10vw;
+    width: 200px;
     margin: 1em;
-    margin-top: 2em;
+    margin-top: .2em;
 }
 .logo img:hover{
     animation: headShake;
@@ -61,66 +62,59 @@ a{
     margin-top: 2.5em;
     min-width: 250px;
 }
-.container-nav{    
+.menu{    
     width: 70%;
+    height: 75px;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    align-items: center;      
     background-color:rgb(238, 250, 253);
-    min-width: 250px;   
+      
 }
-.container-items{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-width: 250px;
-}
-.container-nav-list{
+.menu_items{
     display: flex;
     font-size: 1.2em;
     margin: 1em;
     
 }
-.nav-button{
-    display: flex;
-    justify-content: flex-end;    
-    margin-right: 1em;
-   
-}
-.container-nav-list li{
+.menu_items li{
     list-style: none;
 }
-.container-nav-list li a {
+.menu_items li a {
     text-decoration: none;
     margin-left: 1em;    
-    font-size: 1.2em;
+    font-size: 1em;
+    display: block;
     color: black;
+    text-transform: uppercase;
+    padding-left: .3em;
+    padding-right: .3em;
+    border-radius: .5em;
 }
-.container-nav-list  a:hover{
+.menu_items  a:hover{
     color: #46daee;
+    background-color: rgb(46, 117, 179);
+    transition: .4s;
 }
-.cont-button{
-    display: flex;    
-    margin: 1em;
-}
-.container-items .nav-button button{
-    margin-left: 1em;
-    margin-top: .4em;    
-    padding:.2em;
-    border: none;
+.menu_items .login{
     background-color:#51a8b1;
-    font-size:1em; 
+    border-radius: .5em;
+    padding-left: .3em;
+    padding-right: .3em;   
     box-shadow: 0px 1px 10px rgba(0,0, 0, 0.6);
 }
-.container-items .nav-button button:hover{    
-    background-color: aliceblue;
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+ul.show {
+    top:65px;
 }
 
-.container-items .nav-button a{ 
-   color: rgb(231, 248, 247);      
-}
-.container-items .nav-button a:hover{
-    color: crimson;
-}
+
+/****************************/
 .logo-portada{
     display: flex;
     justify-content: center; 
@@ -471,7 +465,7 @@ footer h4{
 }
 
 
-@media (min-width: 300px) and (max-width: 500px){
+@media (min-width: 300px) and (max-width: 858px){
    
     h1{
         font-size: 1.2em;
@@ -479,50 +473,54 @@ footer h4{
     h4{
         font-size: 1em;
     } 
+
+
     .cont-carrusel{
         width: 0vw;
         height:0em;       
     }
     .logo img{
-        width:20vw;
-        margin-bottom:0em; 
-        position: absolute;     
+        width: 150px;
+        margin-bottom: .5em;
+        margin-top:0em;
+        margin-right:3em;
     }
-    .container-nav{    
+    .menu_items li a {
+        font-size: 16px;
+    }
+    .menu{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: fixed;
         width: 100%;
-        display: flex;
-        justify-content: center; 
-        margin-left: 0;
-    }
-    .container-nav-list li a {
-       font-size: 0.8em;
-       margin-left:1.1em;
-       
-    }
-    .container-nav-list ul{
-        margin-left:5em;
+        height: calc(100% - 65px);
+        background: #414141;
+        top: -100vh;
         text-align: center;
-        display: flex;
-        justify-content: center;
+        transition: all .4s;
+        flex-direction: column;        
     }
-    .cont-button{
-        margin: .5em;
+    .menu_items li {
+        margin: 30px 0 0 0 ;
+        line-height: 30px;
     }
-    .container-items{
-        width:100%;
-        margin-right:0em;       
+    .menu_items li:hover{
+        background: none;
     }
-    .container-nav-list {              
-        padding: 1em;
-        margin-bottom: 0;
-        margin-top: 0;
+    .menu_items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
     }
-    .container-items .nav-button button{
-        margin-left: 1em;
-        margin-top: .4em;    
-        padding:.2em;      
-        font-size:0.8em;     
+    .menu_items li a:hover{
+        color:#51a8b1
     }
+
+
     .logo-portada img{
         width: 90%;
         margin-bottom: 2em;
@@ -638,213 +636,13 @@ footer h4{
             padding: .5em;
         }
 }
-@media (min-width: 500px) and (max-width: 800px){
-   
-    h1{
-        font-size: 2.2em;
+@media screen and (max-width:858px) and (orientation: landscape) 
+{
+    .menu_items li {
+        margin: 5px 0 0 0;
     }
-    h4{
-        font-size: 1.2em;
-    } 
-    .cont-carrusel{
-        width: 0vw;
-        height:0em;       
-    }
-    .logo img{
-        width:25vw;
-        margin-bottom: 2em; 
-            
-    }
-    .container-nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .container-nav-list li a {
-       font-size: .8em;
-       margin-left:.5em;
-       
-    }
-    .container-nav-list ul{
-        margin-left:5em;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    .cont-button{
-        margin: .5em;
-    }
-    .container-items{
-        width:100%;
-        margin-left:2em;       
-    }
-    .container-nav-list {
-        width: 100%;              
-        padding: 1em;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .container-items .nav-button button{
-        margin-left: 1em;
-        margin-top: .4em;    
-        padding:.2em;      
-        font-size:0.8em;     
-    }
-    .logo-portada img{
-        width: 90%;
-        margin-bottom: 2em;
-        margin-top: 2.5em;
-        margin-left:0em;
-    }
-    .portada{
-        width: 100%;
-        height: 20em;         
-    }
-    .portada-capa{
-        height: 20em;
-    }
-    .welcome{
-        width: 100%;        
-        margin: 0;
-    }
-    .description h2{
-        font-size: 1.8em;
-    }
-    .description p{
-        font-size: 1.2em;
-        margin: 1em;
-    }
-    .description button a{
-        font-size: 1em;    
-        text-decoration: none;
-        color: white;    
-    }
-    .infognral i{
-        font-size: 3em;      
-        padding: .5em;       
-    }
-    .infognral p{
-        font-size: 1em;
-        margin: 0em;
-    }
-    .infognral h3{
-        font-size: 2em;
-        padding: .5em;
-        margin-top: .5em;
-    }
-    .info1{
-        width: 30em;
-        height: 20em;      
-    }
-    .info2{
-        width: 30em;
-        height: 20em;      
-    }
-    .info3{
-        width: 30em;
-        height: 20em;      
-    }
-    .espacio-cards{
-      width: 100%;     
-    }
-    .card-producto h3{
-     font-size: 1.5em;
-     padding: .5em;
-   
-    }
-    .card-producto p{
-        font-size: 1em;
-        padding: .3em;
-    }
-    .card-producto{
-        margin: 2em;
-        height: 25em;
-    }
-    .card-producto img{
-        width: 100%;
-        height: 15em;
-        object-fit: cover;
-        object-position: center;        
-     }
-     .fondo-img{
-        height: 15em;
-     }
-    .cont-contacto
-       {/*CONTENEDOR FORMULARIO*/
-        width: 100vw;
-        height: 40em;
-        display: flex;
-        justify-content: center;
-        }
-        .form-contacto{
-            width: 100vw;               
-             
-        }
-        .cont-name input{
-            width: 80vw;
-            height: 4em;
-                   
-        }
-        .cont-mail input{
-            width: 80vw;
-            height: 4em;
-            margin-top: 2em;       
-        }
-        .cont-tel input{
-            width: 80vw;
-            height: 4em;
-            margin-top: 2em;     
-        }
-        textarea{
-            width: 78vw;
-        }
-        .cont-btn button{
-            width: 80vw;
-            height: 2em;
-            margin-top: 2em; 
-        }
-        .cont-footer h4{
-            margin-left: 1em;
-            padding: .5em;
-        }
+    .menu_items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }   
 }
-
-@media (min-width: 1000px) and (max-width: 1416px){
-    .card-producto{
-        width: 15em;
-        height: 30em;
-    }
-   
-    .cont-contacto 
-        {/*CONTENEDOR FORMULARIO*/
-        width:60vw;
-        height: 40em;
-        
-        }
-        .form-contacto{
-            width: 60vw;              
-             
-        }
-        .cont-name input{
-            width: 40vw;
-            height: 4em;
-                   
-        }
-        .cont-mail input{
-            width: 40vw;
-            height: 4em;
-            margin-top: 2em;       
-        }
-        .cont-tel input{
-            width: 40vw;
-            height: 4em;
-            margin-top: 2em;     
-        }
-        
-        .cont-btn button{
-            width: 40vw;
-            height: 2em;
-            margin-top: 2em; 
-        }
-}
-
