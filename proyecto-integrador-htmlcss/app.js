@@ -6,6 +6,5 @@ addEventListener('DOMContentLoaded', () =>{
             menu_items.classList.toggle('show')
         })
     }
-}
+})
 
-)
