@@ -94,7 +94,7 @@ a{
 .menu_items  a:hover{
     color: #46daee;
     background-color: rgb(46, 117, 179);
-    transition: .4s;
+    transition: .6s;
 }
 .menu_items .login{
     background-color:#51a8b1;
@@ -371,7 +371,7 @@ ul.show {
     width: 30%;
     height: 40em;
     padding-bottom: 3em;
-    background-color:#51a8b1;
+    background-color:#51a7b193;
     display: flex;
     justify-content: center;
     border-radius: 10px; 
@@ -386,6 +386,7 @@ ul.show {
 .contacto-titulo h2{
     padding-bottom: .5em;
     font-size: 3em;
+    color: white;
 }
 .form-contacto{
     width: 100%;       
@@ -418,7 +419,21 @@ textarea{
     border: 2px solid cadetblue; 
     cursor: pointer;
 }
+.cont-btn button{
+    font-size: 1.5em;    
+    text-decoration: none;
+    color: white; 
+    background-color:#45c6d4;
+    border: none;
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.6);   
+}
+.cont-btn button:hover{    
+    color: #46daee;
+}
 
+.cont-btn button:hover{
+    background-color: rgb(46, 117, 179);
+}
 /*-------------*/
 footer{
     width: 100%;
@@ -660,4 +675,306 @@ footer h4{
         overflow: scroll;
         height: calc(100% - 65px);
     }   
+}
+@media (min-width: 858px) and (max-width: 1024px){
+   
+    h1{
+        font-size: 1.2em;
+    }
+    h4{
+        font-size: 1em;
+    } 
+
+
+    .espacio-carrusel{
+        margin-bottom: 3em;
+    }
+    .cont-carrusel{
+        width: 70vw;
+        height: 35em;      
+        align-items: center;
+        justify-content: center;   
+        
+    }
+    .logo img{
+        width: 150px;
+        margin-bottom: .5em;
+        margin-top:0em;        
+    }
+    .menu_items li a {
+        font-size: 16px;
+    }
+    .menu{
+        width: 100%;
+        height: 65px;    }
+    
+
+    .logo-portada img{
+        width: 90%;
+        margin-bottom: 2em;
+        margin-top: 2.5em;
+        margin-left:0em;
+    }
+    .portada{
+        width: 100%;
+        height: 20em;         
+    }
+    .portada-capa{
+        height: 20em;
+    }
+    .welcome{
+        width: 80%;        
+        margin: 0;
+    }
+    .description h2{
+        font-size: 1.2em;
+    }
+    .description p{
+        font-size: 1em;
+        margin: 1em;
+    }
+    .description button a{
+        font-size: 1em;    
+        text-decoration: none;
+        color: white;    
+    }
+    .infognral i{
+        font-size: 2.5em;      
+        padding: .5em;       
+    }
+    .infognral p{
+        font-size: 1em;
+        margin: 0em;
+    }
+    .infognral h3{
+        font-size: 1em;
+        padding: .5em;
+        margin-top: .5em;
+    }
+    .info1{
+        width: 15em;
+        height: 15em;      
+    }
+    .info2{
+        width: 15em;
+        height: 15em;      
+    }
+    .info3{
+        width: 15em;
+        height: 15em;      
+    }
+    .espacio-cards{
+      width: 100%;     
+    }
+    .card-producto h3{
+     font-size: 1.5em;
+     padding: .5em;
+   
+    }
+    .card-producto p{
+        font-size: 1em;
+        padding: .3em;
+    }
+    .card-producto{
+        margin: 2em;
+        height: 25em;
+    }
+    .card-producto img{
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+        object-position: center;        
+     }
+     .fondo-img{
+        height: 15em;
+     }
+    .cont-contacto
+       {/*CONTENEDOR FORMULARIO*/
+        width: 80vw;
+        height: 40em;
+        display: flex;
+        justify-content: center;
+        }
+        .form-contacto{
+            width: 80vw;               
+             
+        }
+        .cont-name input{
+            width: 60vw;
+            height: 4em;
+                   
+        }
+        .cont-mail input{
+            width: 60vw;
+            height: 4em;
+            margin-top: 2em;       
+        }
+        .cont-tel input{
+            width: 60vw;
+            height: 4em;
+            margin-top: 2em;     
+        }
+        textarea{
+            width: 60vw;
+        }
+        .cont-btn button{
+            width: 60vw;
+            height: 2em;
+            margin-top: 2em; 
+        }
+        .cont-footer h4{
+            margin-left: 1em;
+            padding: .5em;
+        }
+}
+@media (min-width: 1024px) and (max-width: 1600px){
+   
+    h1{
+        font-size: 1.2em;
+    }
+    h4{
+        font-size: 1em;
+    } 
+
+
+    .espacio-carrusel{
+        margin-bottom: 3em;
+    }
+    .cont-carrusel{
+        width: 70vw;
+        height: 35em;      
+        align-items: center;
+        justify-content: center;   
+        
+    }
+    .logo img{
+        width: 150px;
+        margin-bottom: .5em;
+        margin-top:0em;        
+    }
+    .menu_items li a {
+        font-size: 16px;
+    }
+    .menu{
+        width: 100%;
+        height: 65px;    }
+    
+
+    .logo-portada img{
+        width: 90%;
+        margin-bottom: 2em;
+        margin-top: 2.5em;
+        margin-left:0em;
+    }
+    .portada{
+        width: 100%;
+        height: 20em;         
+    }
+    .portada-capa{
+        height: 20em;
+    }
+    .welcome{
+        width: 80%;        
+        margin: 0;
+    }
+    .description h2{
+        font-size: 1.2em;
+    }
+    .description p{
+        font-size: 1em;
+        margin: 1em;
+    }
+    .description button a{
+        font-size: 1em;    
+        text-decoration: none;
+        color: white;    
+    }
+    .infognral i{
+        font-size: 2.5em;      
+        padding: .5em;       
+    }
+    .infognral p{
+        font-size: 1em;
+        margin: 0em;
+    }
+    .infognral h3{
+        font-size: 1em;
+        padding: .5em;
+        margin-top: .5em;
+    }
+    .info1{
+        width: 18em;
+        height: 18em;      
+    }
+    .info2{
+        width: 18em;
+        height: 18em;      
+    }
+    .info3{
+        width: 18em;
+        height: 18em;      
+    }
+    .espacio-cards{
+      width: 80%;     
+    }
+    .card-producto h3{
+     font-size: 1.5em;
+     padding: .5em;
+   
+    }
+    .card-producto p{
+        font-size: 1em;
+        padding: .3em;
+    }
+    .card-producto{
+        margin: 2em;
+        height: 25em;
+    }
+    .card-producto img{
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+        object-position: center;        
+     }
+     .fondo-img{
+        height: 15em;
+     }
+    .cont-contacto
+       {/*CONTENEDOR FORMULARIO*/
+        width: 70vw;
+        height: 40em;
+        display: flex;
+        justify-content: center;
+        }
+        .form-contacto{
+            width: 70vw;               
+             
+        }
+        .cont-name input{
+            width: 50vw;
+            height: 4em;
+                   
+        }
+        .cont-mail input{
+            width: 50vw;
+            height: 4em;
+            margin-top: 2em;       
+        }
+        .cont-tel input{
+            width: 50vw;
+            height: 4em;
+            margin-top: 2em;     
+        }
+        textarea{
+            width: 50vw;
+        }
+        .cont-btn button{
+            width: 50vw;
+            height: 2em;
+            margin-top: 2em; 
+        }
+        .cont-footer h4{
+            margin-left: 1em;
+            padding: .5em;
+        }
 }
