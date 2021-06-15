@@ -91,8 +91,10 @@ h2{
     width: 10vw;
 }
 .login-button-register{    
-    display: block;
-    text-align: center;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
     margin-top: .5em;
   
 }
@@ -102,6 +104,7 @@ h2{
     background-color: rgba(172, 235, 238, 0);
     width: 10vw;
     color: rgb(17, 9, 116);
+  
    
 }
 .login-button-register button a:hover{
@@ -194,6 +197,9 @@ h2{
         .login-button-password button{
             width: 70vw;
         }
+        .login-button-register button{
+            width: 70vw;
+        }
         .login-input button{
             width: 70vw;
         }
@@ -227,6 +233,9 @@ h2{
      .login-button-password button{
          width: 50vw;
      }
+     .login-button-register button{
+        width: 50vw;
+    }
      .login-input button{
          width: 50vw;
      }
@@ -257,6 +266,9 @@ h2{
      .login-button-password button{
          width:30vw;
      }
+     .login-button-register button{
+        width:30vw;
+    }
      .login-input button{
          width: 30vw;
      }
@@ -287,6 +299,9 @@ h2{
      .login-button-password button{
          width:20vw;
      }
+     .login-button-register button{
+        width:20vw;
+    }
      .login-input button{
          width:20vw;
      }
